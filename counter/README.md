@@ -1,9 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Objetivo
 
 Estudos sobre a estrutura básica ReactJS e alteração do estado da pagina com SetState
 
+Para rodar, usar o comando:
 ### `yarn start`
 
 Runs the app in the development mode.<br>
