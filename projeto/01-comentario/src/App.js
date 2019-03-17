@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import Comments from './components/Comments';
-import NewComment from './components/NewComment';
-import { database } from './firebase';
+import React, { Component } from 'react'
+import Comments from './components/Comments'
+import NewComment from './components/NewComment'
+import { database } from './firebase'
 
 class App extends Component {
   state = {
     comments: {},
     isLoading: false
-  };
+  }
   
   sendComment = comment => {
-    const id = database.ref().child('comments').push().key;
-    //console.log(id);
+    const id = database.ref().child('comments').push().key
+    //console.log(id)
     const comments = {}
-    comments['comments/'+id] = { comment }; //cria um novo objeto com um novo id no firebase
+    comments['comments/'+id] = { comment } //cria um novo objeto com um novo id no firebase
     database.ref().update(comments)
-  };
+  }
 
   componentDidMount(){
     this.setState({ isLoading: true })
@@ -26,8 +26,8 @@ class App extends Component {
         comments: snapshot.val(),
         isLoading: false
       })
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -38,8 +38,8 @@ class App extends Component {
           this.state.isLoading && <p>Carregando...</p>
         }
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

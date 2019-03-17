@@ -1,5 +1,5 @@
-import firebase from 'firebase/app';
-import 'firebase/database';
+import firebase from 'firebase/app'
+import 'firebase/database'
 
 // Initialize Firebase
 const config = {
@@ -9,9 +9,9 @@ const config = {
     projectId: "react-comentarios-58387",
     storageBucket: "react-comentarios-58387.appspot.com",
     messagingSenderId: "609600571223"
-  };
+  }
 
-  firebase.initializeApp(config);
+  firebase.initializeApp(config)
 
-  export const database = firebase.database();
+  export const database = firebase.database()
   
