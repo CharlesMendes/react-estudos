@@ -8,7 +8,13 @@ Para instalar o firebase:
 - configurar servidor pelo https://console.firebase.google.com/ 
 ### `yarn add firebase`
 
+Para instalar o enzyme para testes:
+- componente: https://airbnb.io/enzyme/
+### `yarn add --dev enzyme enzyme-adapter-react-16`
+
 Para rodar, usar o comando:
+### `yarn test`
+ou
 ### `yarn start`
 
 Runs the app in the development mode.<br>

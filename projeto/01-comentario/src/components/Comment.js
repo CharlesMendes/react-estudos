@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Comment = ({comment}) => {
+const Comment = ({c}) => {
+  let comment = 'empty'
+
+  if (c && c.comment)
+  {
+    comment = c.comment
+  }
+
   return(
-    <div>Comentário: { comment.comment }</div>
+    <div>Comentário: { comment }</div>
   )
 }
 
