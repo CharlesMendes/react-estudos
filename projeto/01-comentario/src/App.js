@@ -14,7 +14,11 @@ class App extends Component {
     const id = database.ref().child('comments').push().key
     //console.log(id)
     const comments = {}
-    comments['comments/'+id] = { comment } //cria um novo objeto com um novo id no firebase
+    
+    comments['comments/'+id] = { 
+      comment 
+    } //cria um novo objeto com um novo id no firebase
+    
     database.ref().update(comments)
   }
 
