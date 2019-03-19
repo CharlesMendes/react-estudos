@@ -14,7 +14,7 @@ class App extends Component {
     const id = database.ref().child('comments').push().key
     //console.log(id)
     const comments = {}
-    
+
     comments['comments/'+id] = { 
       comment 
     } //cria um novo objeto com um novo id no firebase
@@ -29,6 +29,7 @@ class App extends Component {
     this.comments = database.ref('comments')
     this.comments.on('value', snapshot => {
       //console.log(snapshot.val())
+      //console.log('passou aqui o teste')
       this.setState({ 
         comments: snapshot.val(),
         isLoading: false
