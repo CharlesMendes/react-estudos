@@ -17,6 +17,19 @@ Para rodar, usar o comando:
 ou
 ### `yarn start`
 
+Para instalar o firebase-tools, usar o comando:
+### `npm install -g firebase-tools`
+
+Para usar o firebase:
+### `firebase login`
+### `firebase list`
+
+Criando a versão final do projeto, versão otimizada para produção (pasta /build/)
+### `yarn build`
+### `firebase init`
+### `firebase deploy`
+https://react-comentarios-58387.firebaseapp.com
+
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
